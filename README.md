@@ -10,7 +10,7 @@
 Create a food delivery system that will notify all drivers about an incoming order.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/AndreArsyan/cs-665-assignment-2
 
 # Running The Program
 1. `cd /src/main/java/edu/bu/met/cs665`
@@ -19,8 +19,6 @@ https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
 
 # Implementation Description 
 ![UML.png](UML.png)
-
-For each assignment, please answer the following:
 
 This app implements Observer Patterns which allows all subscribed driver to receive a notification about an order.
 We can easily add new driver and new restaurant which the order will be passed and published through the Delivery Request object.
