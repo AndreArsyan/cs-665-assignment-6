@@ -1,19 +1,21 @@
 package edu.bu.met.cs665;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import edu.bu.met.cs665.assignment2.Shop;
-
 import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+import edu.bu.met.cs665.assignment2.Shop;
 
 public class TestShop {
 
-    public TestShop() {}
+    public TestShop() {
+    }
 
     @Test
     public void testShopName() {
 
-        Shop shop = new Shop("mcd","1010 Comm Ave");
+        Shop shop = new Shop("mcd", "1010 Comm Ave");
         assertEquals("mcd", shop.getName());
 
     }
@@ -21,7 +23,7 @@ public class TestShop {
     @Test
     public void testShopAddress() {
 
-        Shop shop = new Shop("mcd","1010 Comm Ave");
+        Shop shop = new Shop("mcd", "1010 Comm Ave");
         assertEquals("1010 Comm Ave", shop.getAddress());
 
     }
@@ -29,7 +31,7 @@ public class TestShop {
     @Test
     public void testOrder() {
 
-        Shop shop = new Shop("mcd","1010 Comm Ave");
+        Shop shop = new Shop("mcd", "1010 Comm Ave");
         // Create the orders
         ArrayList<String> mcdOrder = new ArrayList<String>() {
             {

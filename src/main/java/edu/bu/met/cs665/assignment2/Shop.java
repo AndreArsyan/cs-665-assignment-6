@@ -8,7 +8,7 @@
 
 package edu.bu.met.cs665.assignment2;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This is the Shop class.
@@ -20,12 +20,12 @@ public class Shop {
     private String address;
 
     // This array will contain user orders (e.g. Burgers, Spaghetti)
-    private ArrayList<String> orders = new ArrayList<String>();
+    private List<String> orders;
 
     /**
      * Create a Person object using first and last name and birthday.
      *
-     * @param name shop name
+     * @param name    shop name
      * @param address shop address
      */
     public Shop(String name, String address) {
@@ -36,7 +36,7 @@ public class Shop {
     /*
      * Getter method for all orders.
      */
-    public ArrayList<String> getOrders() {
+    public List<String> getOrders() {
         return orders;
     }
 
@@ -59,7 +59,7 @@ public class Shop {
      *
      * @param orders list of a user order
      */
-    public void setOrders(ArrayList<String> orders) {
+    public void setOrders(List<String> orders) {
         this.orders = orders;
     }
 

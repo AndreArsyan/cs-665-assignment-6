@@ -7,6 +7,7 @@
  */
 
 package edu.bu.met.cs665.assignment2;
+
 import java.util.ArrayList;
 
 /**
@@ -19,13 +20,13 @@ public class DeliveryRequest implements PublisherBase {
     private ArrayList<SubscriberBase> driver = new ArrayList<SubscriberBase>();
 
     /*
-     *  Constructor for Delivery Request
+     * Constructor for Delivery Request
      */
     public DeliveryRequest() {
     }
 
     /*
-     *  Add subscriber to the Arraylist of subscribers
+     * Add subscriber to the Arraylist of subscribers
      */
     public void subscribe(SubscriberBase o) {
         driver.add(o);
@@ -38,7 +39,6 @@ public class DeliveryRequest implements PublisherBase {
         driver.remove(o);
     }
 
-
     /**
      * Publish the order to all subscriber
      *
@@ -49,6 +49,5 @@ public class DeliveryRequest implements PublisherBase {
             o.addOrder(shop);
         }
     }
-
 
 }

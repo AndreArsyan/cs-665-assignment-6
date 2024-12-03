@@ -6,6 +6,7 @@
  * Description: Interface for subscriber
  */
 package edu.bu.met.cs665.assignment2;
+
 public interface SubscriberBase {
 
   void addOrder(Shop shop);

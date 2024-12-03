@@ -7,6 +7,7 @@
  */
 
 package edu.bu.met.cs665.assignment2;
+
 public interface PublisherBase {
 
   void subscribe(SubscriberBase o);

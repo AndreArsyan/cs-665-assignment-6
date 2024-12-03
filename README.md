@@ -2,15 +2,17 @@
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
 | Name         | Andre Arsyan Jordie        |
-| Date         | 10/12/2024                 |
+| Date         | 12/3/2024                 |
 | Course       | Fall                       |
-| Assignment # | 2                          |
+| Assignment # | 6                          |
 
 # Assignment Overview
-Create a food delivery system that will notify all drivers about an incoming order.
+Refactor codebase from Assignment 2:
+
+`Food delivery system that will notify all drivers about an incoming order.`
 
 # GitHub Repository Link:
-https://github.com/AndreArsyan/cs-665-assignment-2
+https://github.com/AndreArsyan/cs-665-assignment-6
 
 # Running The Program
 1. `cd /src/main/java/edu/bu/met/cs665`
@@ -25,6 +27,10 @@ We can easily add new driver and new restaurant which the order will be passed a
 By adding the shop and order detail into a Delivery Request, it ensures the driver to get the correct order and which restaurant to go.
 PublisherBase and SubscriberBase are used as an interface for the Observer Pattern backbone.
 
+## Refactoring Details
+- Simplify driver creation by using a collection and create the object with a loop.
+- Due to only contain static number of collection, change `Shop.orders` using a List instead of ArrayList.
+- Order creation using a static collection of List
 
 # Maven Commands
 

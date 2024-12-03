@@ -7,7 +7,7 @@
  */
 package edu.bu.met.cs665.assignment2;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This is the Driver class.
@@ -23,7 +23,7 @@ public class Driver implements SubscriberBase {
     /**
      * Driver constructor
      *
-     * @param name driver name
+     * @param name            driver name
      * @param deliveryRequest Subscribe to this Delivery Request
      */
     public Driver(String name, DeliveryRequest deliveryRequest) {
@@ -33,16 +33,16 @@ public class Driver implements SubscriberBase {
     }
 
     /*
-     *  Print the notification and order details
+     * Print the notification and order details
      */
     public void newOrderNotification() {
-        System.out.println("Hi " + getName()+"!\n"+
+        System.out.println("Hi " + getName() + "!\n" +
                 "New order from " + this.shop.getName() + ". " +
-                "Orders:\n  " +getOrder().toString());
+                "Orders:\n  " + getOrder().toString());
     }
 
     /*
-     *  Get driver name
+     * Get driver name
      */
     public String getName() {
         return this.name;
@@ -62,7 +62,7 @@ public class Driver implements SubscriberBase {
     /*
      * Get the order list
      */
-    public ArrayList<String> getOrder() {
+    public List<String> getOrder() {
         return this.shop.getOrders();
     }
 
